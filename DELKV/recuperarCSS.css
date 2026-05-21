@@ -1,0 +1,137 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('./imagens/fundo.png');
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+body::-webkit-scrollbar {
+    width: 7px;    
+    height: 10px;           
+}
+  
+body::-webkit-scrollbar-track{
+    background: transparent;        
+}
+  
+body::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+    border: 3px solid grey; 
+}
+
+
+/*Cabeçalho codigos*/
+
+#cabecalho{
+    position: relative;
+    width: 100%;
+    height: 80px;
+
+    box-shadow: 0px 1px 10px -5px black;
+    background-color: rgba(245, 245, 245, 0.322);
+}
+
+
+#titulo div{
+    font-size: 2.3rem;
+    float: left;
+    padding-left: 10px;
+    
+}
+
+#titulo{
+    margin-top: 16px;
+    float: left;
+}
+
+#menu{
+    float: right;
+}
+#menu ul{
+    list-style-type: none;
+    margin-top: 27px;
+    font-family: monospace;
+    font-size: 16px;
+    white-space: nowrap;
+}
+#menu ul li{
+    display: inline-block;
+    margin-right:45px ;
+    
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item{
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    height: auto;
+
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.527);
+    align-items: center;
+
+    justify-content: center;
+
+}
+#sloganbuscar{
+    z-index: 11;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 200px;
+    margin-top: 20px;
+
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.591);
+
+    background-color: #8c4830;
+}
+
+
+#busca{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 40%;
+    min-width: 300px;
+    height: 35px;
+    margin-top: 40px;
+
+    background-color: rgb(229, 229, 229);
+    border-radius: 5px;
+    border: 1px solid black;
+    white-space: nowrap;
+}

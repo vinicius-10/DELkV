@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+:root{
+    --anim:none;
+    --anim2:none;
+    --displayLogin:flex;
+    --displayCadastro:none;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*TRANSIÇÃO*/
+
+
+
+@keyframes ladoCadastro{
+    0%{
+        left: 0%;
+        border-top-left-radius:15px;
+        border-bottom-left-radius:15px;
+    }
+    100%{
+        left: 60%;
+        border-top-right-radius:15px;
+        border-bottom-right-radius:15px;
+        border-top-left-radius:0px;
+        border-bottom-left-radius:0px;
+    }
+}
+
+@keyframes ladoLogin{
+    0%{
+        left: 60%;
+        border-top-right-radius:15px;
+        border-bottom-right-radius:15px;
+    }
+    100%{
+        left: 0%;
+        border-top-left-radius:15px;
+        border-bottom-left-radius:15px;
+        border-top-right-radius:0px;
+        border-bottom-right-radius:0px;
+    }
+}
+
+
+
+#erros,#erros2{
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+
+    background-image: url('./imagens/fundo.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+
+
+    border-radius: 15px;
+    
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.591);
+
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: auto;
+    min-height: 50%;
+
+    transition: heigth .5s linear;
+}
+
+.content::before{
+    content: '';
+    position: absolute;
+    background-color: #8c4830;
+    
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+
+
+    width: 40%;
+    height: 100%;
+
+    left: var(--empurro);
+    animation: var(--anim) .5s linear;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+
+
+.edittilte{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+}
+.marrom{
+    color: white;
+}
+.branco{
+    color: #8c4830;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    line-height: 25px;
+}
+
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+
+}
+.btnmarrom{
+    background-color: transparent;
+    border: 1px solid white;
+    transition: 100ms linear;
+}
+.btnmarrom:hover{
+    background-color: white;
+    color: #8c4830;
+}
+.corlogin{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+
+
+
+.FormLogin{
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+
+.login{
+    display: var(--displayLogin);
+    /*none display*/
+
+    transition: .5s linear;
+}
+
+
+
+.cadastro{
+    position: absolute;
+    display: var(--displayCadastro);
+    /*flexdisplay*/
+    transition: .5s linear;
+
+
+}
+
+.divsradios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.inpt2{
+    padding-top: 18px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+
+}
+
+.form p{
+    color: #8c4830;
+}
+
+.form input{
+    height: 45px;
+    border: none;
+    background-color: rgb(203, 203, 203);
+    margin: 8px;
+
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 20px;
+
+}
+a{
+    color: rgba(0, 0, 0, 0.413);
+}
+
+.form input::placeholder{
+    color: rgba(0, 0, 0, 0.413);
+    font-size: 14px;
+}
+
+
+
+
+
+
+.btnform{
+    margin-top: 5px;
+    border: 1px solid #8c4830;
+    background-color: #8c4830;
+    color: white;
+    transition: 100ms linear;
+}
+.btnform:hover{
+    background-color: white;
+    color: #8c4830;
+}
+
+.ttlmts{
+    padding-top: 10px;
+}
+
+.btnmts{
+    margin-bottom: 20px;
+}
+
+/*SEGUNDA PARTEEEEEE*/
+
+
+
+.cadastro .corlogin{
+    order: 2;
+}
+
+.cadastro .FormLogin{
+    order: 1;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('./imagens/fundo.png');
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+body::-webkit-scrollbar {
+    width: 7px;    
+    height: 10px;           
+}
+  
+body::-webkit-scrollbar-track{
+    background: transparent;        
+}
+  
+body::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+    border: 3px solid grey; 
+}
+
+
+
+
+
+/*Cabeçalho codigos*/
+
+#cabecalho{
+    position: relative;
+    width: 100%;
+    height: 80px;
+
+    box-shadow: 0px 1px 10px -5px black;
+    background-color: rgba(245, 245, 245, 0.322);
+}
+
+
+#titulo div{
+    font-size: 2.3rem;
+    float: left;
+    padding-left: 10px;
+    
+}
+
+#titulo{
+    margin-top: 16px;
+    float: left;
+}
+
+#menu{
+    float: right;
+}
+#menu ul{
+    list-style-type: none;
+    margin-top: 27px;
+    font-family: monospace;
+    font-size: 16px;
+    white-space: nowrap;
+}
+#menu ul li{
+    display: inline-block;
+    margin-right:45px ;
+    
+}
+
+/*fim  cabeçalho*/
+
+a{
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+}
+
+
+
+
+#sloganbuscar{
+    z-index: 11;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 200px;
+    margin-top: 20px;
+
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.591);
+
+    background-color: #8c4830;
+}
+
+#botao{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    border-radius: 3px;
+    height: 100%;
+    width: 20.1%;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    background-color: rgba(114, 114, 114, 0.541);
+    color: #000000c7;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 200ms linear;
+    
+}
+#botao:hover{
+    color: #000000;
+}
+
+
+#texto{
+    background-color: transparent;
+    border: 0;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 100%;
+    margin-left: 5%;
+    width: 75%;
+
+}
+#texto:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+#botao{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 100%;
+    width: 20%;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    background-color: #8c4830;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+}
+
+
+
+#filtros{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+}
+
+#filtros .ullista{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+#filtros .ullista .item{
+    display: inline-block;
+    background-color: transparent;
+
+    
+    width: 130px;
+    height: 25px;
+
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 5px 30px;
+    margin-top: 10px;
+
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: monospace;
+    
+}
+
+#filtros .ullista .item ul{
+    display: none;
+    list-style-type: none;
+    width: auto;
+    height: 0px;
+    margin-top: 7px;
+    color: black;
+    font-weight: 100;
+
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.893);
+
+    overflow-y: scroll;
+
+
+}
+
+
+
+#filtros .ullista .item:hover ul{
+    display: block;
+    position:absolute;
+    animation: abrir linear 100ms;
+    animation-fill-mode: forwards;
+
+
+
+}
+
+
+@keyframes abrir{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 120px;
+    }
+}
+
+
+
+#filtros .ullista .item ul li:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+#filtros .ullista .item ul::-webkit-scrollbar {
+    width: 7px;               
+}
+  
+#filtros .ullista .item ul::-webkit-scrollbar-track{
+    background: transparent;        
+}
+  
+#filtros .ullista .item ul::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+    border: 3px solid grey; 
+}
+
+
+
+h1{
+    margin-top: 220px;
+
+    font-family: "Source Sans Pro", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+
+
+footer{
+    position: absolute;
+    bottom: -50%;
+    width: 100%;
+    height: 60px;
+
+    background-color: #1c1c1cf1;
+    color: white;
+}
+
+
+/*bsuca aqui*/
+.container{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+}
+
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: auto;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+
+}
+.container img{
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.215);
+}
+
+.container p{
+    font-family: "Source Sans Pro", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: center;
+}
+
+
+/*termina busca*/
+
+

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('./imagens/fundo.png');
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+body::-webkit-scrollbar {
+    width: 7px;    
+    height: 10px;           
+}
+  
+body::-webkit-scrollbar-track{
+    background: transparent;        
+}
+  
+body::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+    border: 3px solid grey; 
+}
+
+
+/*Cabeçalho codigos*/
+
+#cabecalho{
+    position: relative;
+    width: 100%;
+    height: 80px;
+
+    box-shadow: 0px 1px 10px -5px black;
+    background-color: rgba(245, 245, 245, 0.322);
+}
+
+
+#titulo div{
+    font-size: 2.3rem;
+    float: left;
+    padding-left: 10px;
+    
+}
+
+#titulo{
+    margin-top: 16px;
+    float: left;
+}
+
+#menu{
+    float: right;
+}
+#menu ul{
+    list-style-type: none;
+    margin-top: 27px;
+    font-family: monospace;
+    font-size: 16px;
+    white-space: nowrap;
+}
+#menu ul li{
+    display: inline-block;
+    margin-right:45px ;
+    
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+}
+/*fim  cabeçalho*/
+
+
+.container{
+    display: flex;
+
+    width: 100%;
+    height: 500px;
+
+    margin-top: 30px;
+}
+
+.livro{
+    width: 75%;
+    min-width: 600px;
+    height: 100%;
+
+    background-color: rgba(245, 245, 245, 0.664);
+
+    border-radius: 10px;
+    margin-right: 3%;
+    white-space: nowrap;
+
+
+
+}
+
+.img{
+    float: left;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 40%;
+    height: 100%;
+
+
+
+}
+
+
+.titulo{
+    float: right;
+    width: 60%;
+    height: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+
+}
+#nomelivro{
+    font-size: 35px;
+    text-transform: capitalize;
+
+}
+
+.botao{
+    float: right;
+    padding-top: 200px;
+    padding-right: 40px;
+}
+
+.form2{
+    display: flex;
+    flex-direction: column;
+}
+
+.form2 input{
+    width: 250px;
+    height: 70px;
+    border: none;
+    background-color: rgb(203, 203, 203);
+    margin: 8px;
+
+    box-shadow: 1px 1px 10px -1px rgba(0, 0, 0, 0.591);
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+
+#button{
+    width: 250px;
+    height: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+
+    background-color:#8c4830;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px -1px rgba(0, 0, 0, 0.591);
+    transition: 100ms linear;
+
+}
+#button:hover{
+    background-color:white;
+    color: #8c4830;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px -1px rgba(0, 0, 0, 0.726);
+}
+
+
+
+
+
+
+
+.maislivro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+
+    background-color: rgba(245, 245, 245, 0.664);
+
+    border-radius: 10px;
+}
+
+.maislivro div{
+    margin-top: 17px;
+}
+
+.abas{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    background-color: rgba(245, 245, 245, 0.664);
+}
+.abas p{
+    padding: 20px;
+    font-size: 25px;
+
+    
+}
+
+.abas div{
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+}
+
+
+.desc ul{
+    list-style-type: none;
+}
+
+.desc ul li{
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.434);
+    text-transform: capitalize;
+
+
+}
+
+.sinopse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sinopse div{
+    width: 80%;
+}
+
+.desc p{
+text-align: center;
+}
+.form input{
+    width: 250px;
+    height: 70px;
+    border: none;
+    background-color: rgb(203, 203, 203);
+    margin: 8px;
+
+    box-shadow: 1px 1px 10px -1px rgba(0, 0, 0, 0.591);
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 20px;
+
+}
+
+
+#erro{
+    color: red;
+    font-weight: bold;
+}
