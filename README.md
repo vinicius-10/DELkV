@@ -42,3 +42,11 @@ A arquitetura do sistema foi desenhada para garantir estabilidade, segurança no
 - **Frontend:** HTML5, CSS3 e JavaScript
 - **Banco de Dados:** PostgreSQL (armazenamento seguro de usuários, livros, empréstimos e reservas)
 - **Versionamento:** Git + GitHub
+
+## ✒️ Autores
+
+* **Vinicius Souza Dias**
+* **DANILO AZEVEDO AQUINO**
+* **EULER COUTO BARRETO**
+* **KAROLAYNE APARECIDA SILVA CAMPOS**
+* **LUIZ GUSTAVO ABELLON VIDAL**
